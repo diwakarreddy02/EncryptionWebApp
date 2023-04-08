@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Ceaser Cipher App</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="main.css">
+
+    </head>
+
+    <body>
+
+        <div class="container">
+            <h1>Ceaser Cipher App</h1>
+            <div class="app-container">
+                <h3>Your Message:</h3>
+                <textarea name="" id="message" placeholder="Write your message here!" required></textarea>
+                <br>
+                <br>
+                <label for="Encryption Type">Select type of Encrypt:   
+                    <Select id="Encryption-Type" required>
+                        <option value="">(select one)</option>
+                        <option value="Ceaser Cipher">Ceaser Cipher</option>
+                        <option value="Vignere Cipher">Vignere Cipher</option>
+                    </Select>
+                </label>
+                <div class="buttons-container">
+                    <button id="encrypt" type = "button" onclick="Encrypt()">Encrypt</button>
+                    <input id="key" type="text" placeholder="key" required>
+                    <button id="decrypt" onclick="Decrypt()">Decrypt</button>
+                </div>
+                <br>
+                <br>
+                <hr>
+                <h3 id="heading-encrypt/decrypt-message"></h3>
+                <textarea name="" id="Encrypted-Message" placeholder="Your Encrypted Message will be shown here!"></textarea>
+                
+            </div>
+        </div>
+
+        <script src="encrypt.js"></script>
+
+    </body>
+
+</html>
